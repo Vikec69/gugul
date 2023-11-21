@@ -1,0 +1,197 @@
+.vik {
+    margin: auto;
+    margin-bottom: 21.7rem;
+    text-align: center;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.potv{
+    resize: none;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    color:#e8eaed;
+    word-wrap: break-word;
+    outline: none;
+    display: flex;
+}
+
+input {
+    min-height: 2rem;
+    min-width: 25rem
+}
+
+a{
+    text-decoration: none;
+    color:white
+}
+
+body,input,button {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #bdc1c6;
+    background-color: #202124;
+    font-size: 14px;
+    margin: auto;
+    padding-top: 8px;
+}
+
+footer {
+    background-color: #171717;
+    padding: 3px;
+    padding-bottom:1rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    flex-wrap: nowrap;
+}
+
+form{
+    width: 100%;
+}
+
+div{
+    display: block;
+}
+
+img {
+    overflow: clip;
+}
+
+.navbar {
+    text-align: right;
+    text-decoration: none;
+}
+
+.button {
+    border: none;
+    border-radius: 5px;
+    background-color: #8ab4f8;
+    color: #171717;
+    padding: 9px 23px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+.gb_F {
+    display: inline-block;
+    text-decoration: none;
+    padding-left: 15px ;
+}
+
+.gb_Ed {
+    font-family: Arial, sans-serif;
+    line-height: normal;
+    padding-right: 15px;
+    text-decoration: none;
+}
+
+.phioh {
+    padding: 15px;
+    color: #e8eaed;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    flex-wrap: nowrap;
+    display: flex;
+    
+}
+
+.flex{
+    display: flex;
+}
+
+.ktlki {
+    text-align: center;
+    justify-content: space-around;
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.kok {
+max-height: 100%;
+max-width: 100%;
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
+height: 5rem;
+padding-bottom: 1rem;
+margin-top: 3rem;
+}
+
+.kxwpgc .phioh.l {
+    text-align: right;
+}
+
+.pl{
+    padding-left: 2rem;
+}
+
+.pr{
+    padding-right: 2rem;
+}
+
+.r{
+    justify-content: right;
+}
+
+.aghh{
+    justify-content: flex-start;
+    min-width: 30%;
+    order: 1;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-top: 2rem;
+
+}
+.btn input[type=submit]{
+    background-color: #303134;
+    border: 1px;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 140px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    flex-shrink: 0;
+
+}
+
+.vik input[type=text] {
+    width: 35%;
+    padding: 9px 20px;
+    text-align: left;
+    border-radius: 25px;
+    background-color: #202124;
+    border: 1px solid #5f6368;
+    font-weight: 300;
+    margin-top: 16px;
+    color: white;
+}
+
+.vik input[type=submit]:hover {
+    border: 1px solid rgb(145, 145, 145);
+}
+
+.phioh a:hover {
+    text-decoration: underline;
+}
+
