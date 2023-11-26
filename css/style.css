@@ -8,6 +8,13 @@
     align-content: center;
 }
 
+hr{border-top: solid 1px #202124}
+
+.center{
+    justify-content: center;
+
+}
+
 .potv{
     resize: none;
     background-color: transparent;
@@ -75,14 +82,14 @@ img {
     padding: 9px 23px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    display: flex;
     font-size: 16px;
     cursor: pointer;
   }
 
 .gb_F {
-    display: inline-block;
     text-decoration: none;
+    justify-content: right ;
     padding-left: 15px ;
 }
 
@@ -91,6 +98,17 @@ img {
     line-height: normal;
     padding-right: 15px;
     text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gb_Fred {
+    font-family: Arial, sans-serif;
+    line-height: normal;
+    padding-right: 15px;
+    text-decoration: none;
+    display: flex;
+    justify-content: right;
 }
 
 .phioh {
@@ -126,12 +144,22 @@ padding-bottom: 1rem;
 margin-top: 3rem;
 }
 
+.fl {
+    display: flex;
+    justify-content: space-between;
+}
+
+
 .kxwpgc .phioh.l {
     text-align: right;
 }
 
 .pl{
     padding-left: 2rem;
+}
+
+.pt{
+    padding-top: 10px
 }
 
 .pr{
@@ -240,3 +268,12 @@ margin-top: 3rem;
   .dropup:hover .dropbtn {
     text-decoration: underline;
   }
+<<<<<<< HEAD
+
+  .left{
+    display: flex;
+    justify-content: left;
+
+  }
+=======
+>>>>>>> a4eab4bdb882b7d9b3889cb5cd815b5597e282d8
