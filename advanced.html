@@ -3,34 +3,55 @@
 <link rel="stylesheet" href="css/style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <head>
-        <title>Vyhledávání</title>
+        <title>Rozšířené vyhledávání</title>
     </head>
     <body>
         <nav class="navbar">
-            <div class="gb_Fred">
-                <span class="gb_F pt">
-                    <a href="https://gmail.com/">Gmail</a>
-                </span>
-                <span class="gb_F pt">
-                    <a href="obrazky.html">Obrázky</a>
-                </span>
+            <div class="gb_Ed">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" class="left pt" width="200px" height="30px">
                 <span class="gb_F">
+                    <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmyaccount.google.com%2F%3Fpli%3D1%26nlr%3D1&sacu=1&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S1862524751%3A1700726785052387&theme=glif">
                     <button class="button"> Přihlásit </button>
+                    </a>
                 </span>
             </div>
         </nav>
-        <a href="index.html">
-        <img class="kok" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg">
-        </a>
-        <div class="vik">
-            <div class="pole">
-        <form action="https://google.com/search">
-            <input type="text" name="q">
-            </div>
-        <div class="btn">
-            <input type="submit" value="Hledat Googlem ">
+        <div class="pl">
+        <h1 style="padding-top: 20px;">Rozšířené vyhledávání</h1>
+        <div class="fl">
+        <h3 class="pt" style="display: flex;">Kritéria vyhledávání stránek</h3>
+        <h3 class="pr">Způsob zadání ve vyhledávacím poli.</h3>
+    </div>
+        <form>
+            <div class="flex">
+            <label for="all">všechna tato slova</label><br>
+            <input type="text" id="all" name="all"><br>
+            <p class="pr">Zadejte důležitá slova: trojbarevný krysí teriér</p>
         </div>
-        </form>
+        <div class="flex">
+            <label for="exac">přesně toto slovo nebo sousloví</label><br>
+            <input type="text" id="exac" name="exac">
+            <p class="pr">Přesná slova zadejte v uvozovkách: "krysí teriér"</p>
+        </div>
+        <div class="flex">
+            <label for="any">kterékoliv z těchto slov</label><br>
+            <input type="text" id="any" name="any"><br>
+            <p class="pr">Mezi všechna požadovaná slova vložte operátor OR: miniaturní OR standardní</p>
+        </div>
+        <div class="flex">
+            <label for="none">žádné z těchto slov:</label><br>
+            <input type="text" id="none" name="none">
+            <p class="pr">Před slova, která nechcete, zadejte znaménko mínus: -hlodavec, -"Jack Russell"</p>
+        </div>
+        <div class="flex">
+            <label for="numbers">čísla od:</label><br>
+            <input type="text" id="numbers" name="numbers"><br>
+            <label for="numbers">do</label>
+            <input type="text" id="numbers" name="numbers"><br>
+            <p class="pr">Mezi čísla vložte 2 tečky a uveďte měrnou jednotku: 10..35 kg, 300..500 Kč, 2010..2011</p>
+        </div>
+          </form>
+          <hr>
         </div>
         <footer>
             <p class="pl">Česko</p>
@@ -57,4 +78,3 @@
             </div>
         </footer>
     </body>
-</html>
