@@ -268,9 +268,3 @@ margin-top: 3rem;
   .dropup:hover .dropbtn {
     text-decoration: underline;
   }
-
-  .left{
-    display: flex;
-    justify-content: left;
-
-  }
