@@ -1,80 +1,198 @@
 <!DOCTYPE html>
 <html lang="cs">
-<link rel="stylesheet" href="css/style.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <head>
-        <title>Rozšířené vyhledávání</title>
-    </head>
-    <body>
-        <nav class="navbar">
-            <div class="gb_Ed">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" class="left pt" width="200px" height="30px">
-                <span class="gb_F">
-                    <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmyaccount.google.com%2F%3Fpli%3D1%26nlr%3D1&sacu=1&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S1862524751%3A1700726785052387&theme=glif">
-                    <button class="button"> Přihlásit </button>
-                    </a>
-                </span>
-            </div>
-        </nav>
-        <div class="pl">
-        <h1 style="padding-top: 20px;">Rozšířené vyhledávání</h1>
-        <div class="fl">
-        <h3 class="pt" style="display: flex;">Kritéria vyhledávání stránek</h3>
+  <link rel="stylesheet" href="css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <title>Rozšířené vyhledávání</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="gb_Ed">
+        <a href="index.html">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+            class="left pt"
+            width="200px"
+            height="30px"
+          />
+        </a>
+        <span class="gb_F">
+          <a
+            href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmyaccount.google.com%2F%3Fpli%3D1%26nlr%3D1&sacu=1&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S1862524751%3A1700726785052387&theme=glif"
+          >
+            <button class="button">Přihlásit</button>
+          </a>
+        </span>
+      </div>
+    </nav>
+    <div class="pl">
+      <h1 style="padding-top: 20px">Rozšířené vyhledávání</h1>
+      <div class="fl">
+        <h3 class="pt" style="display: flex">Kritéria vyhledávání stránek</h3>
         <h3 class="pr">Způsob zadání ve vyhledávacím poli.</h3>
+      </div>
+      <form>
+        <div class="advanced">
+          <label for="all">všechna tato slova</label><br />
+          <input class="h" type="text" id="all" name="all" /><br />
+          <label for="all" style="font-size: small" class="pr"
+            >Zadejte důležitá slova: trojbarevný krysí teriér</label
+          >
+        </div>
+        <div class="advanced">
+          <label for="exac">přesně toto slovo nebo sousloví</label><br />
+          <input class="h" type="text" id="exac" name="exac" />
+          <label for="exac" style="font-size: small" class="pr"
+            >Přesná slova zadejte v uvozovkách: "krysí teriér"</label
+          >
+        </div>
+        <div class="advanced">
+          <label for="any">kterékoliv z těchto slov</label><br />
+          <input class="h" type="text" id="any" name="any" /><br />
+          <label for="any" style="font-size: small" class="pr"
+            >Mezi všechna požadovaná slova vložte operátor OR: miniaturní OR
+            standardní</label
+          >
+        </div>
+        <div class="advanced">
+          <label for="none">žádné z těchto slov:</label><br />
+          <input class="h" type="text" id="none" name="none" />
+          <label for="none" style="font-size: small" class="pr"
+            >Před slova, která nechcete, zadejte znaménko mínus: -hlodavec,
+            -"Jack Russell"</label
+          >
+        </div>
+        <div class="advanced">
+          <label for="numbers">čísla od:</label><br />
+          <input class="h" type="text" id="numbers" name="numbers" /><br />
+          <label for="numbers">do</label>
+          <input class="h" type="text" id="numbers" name="numbers" /><br />
+          <label for="numbers" style="font-size: small" class="pr"
+            >Mezi čísla vložte 2 tečky a uveďte měrnou jednotku: 10..35 kg,
+            300..500 Kč, 2010..2011</label
+          >
+        </div>
+      </form>
     </div>
-        <form>
-            <div class="flex">
-            <label for="all">všechna tato slova</label><br>
-            <input type="text" id="all" name="all"><br>
-            <p class="pr">Zadejte důležitá slova: trojbarevný krysí teriér</p>
+    <hr style="margin-top: 2rem; margin-bottom: 2rem" />
+    <div class="pl">
+      <h2>Kritéria zúžení okruhu výsledků</h2>
+      <form class="advanced">
+        <label for="lang">Jazyk</label>
+        <select name="languages" id="lang">
+          <option value="wht">kterýkoliv</option>
+          <option value="afr">Afrikánsky</option>
+          <option value="us">Anglicky</option>
+          <option value="cz">Česky</option>
+          <option value="ger">Německy</option>
+          <option value="rus">Rusky</option>
+          <option value="spn">Španělsky</option>
+          <option value="jap">Japonsky</option>
+          <option value="chin">Čínsky</option>
+        </select>
+        <label for="lang" style="font-size: small" class="pr"
+          >Vyhledávání stránek ve zvoleném jazyce.</label
+        >
+      </form>
+      <form class="advanced">
+        <label for="area">Oblast</label>
+        <select name="area" id="area">
+          <option value="wht1">všude</option>
+          <option value="afr1">Afrika</option>
+          <option value="us1">Anglie</option>
+          <option value="cz1">Česká Republika</option>
+          <option value="ger1">Německo</option>
+          <option value="rus1">Rusko</option>
+          <option value="spn1">Španělsko</option>
+          <option value="jap1">Japonsko</option>
+          <option value="chin1">Čína</option>
+        </select>
+        <label for="area" style="font-size: small" class="pr"
+          >Vyhledávání stránek publikovaných v určité geografické
+          oblasti.</label
+        >
+      </form>
+      <form class="advanced">
+        <label for="upd">Poslední aktualizace:</label>
+        <select name="update" id="upd">
+          <option value="whnvr">kdykoliv</option>
+          <option value="24">posledních 24h</option>
+          <option value="lw">minulý týden</option>
+          <option value="lm">minulý měsíc</option>
+          <option value="ly">minulý rok</option>
+        </select>
+        <label for="upd" style="font-size: small" class="pr"
+          >Vyhledáte stránky, které byly aktualizovány v určitém období.</label
+        >
+      </form>
+      <div class="advanced">
+        <label for="none">Web nebo doména:</label><br />
+        <input class="h" type="text" id="none" name="none" />
+        <label for="none" style="font-size: small" class="pr"
+          >Vyhledávání na jednom webu (např. wikipedia.org ) nebo omezení
+          výsledků na doménu (např. .edu, .org nebo .gov).</label
+        >
+      </div>
+      <input type="Submit" value="Rozšířené nastavení" style="display: flex; justify-content: center; margin-top: 2rem; margin-bottom: 2rem
+      "> 
+    </div>
+    <footer style="position: relative">
+      <p class="pl">Česko</p>
+      <hr />
+      <div class="flex">
+        <a
+          class="phioh pl"
+          href="https://about.google/?utm_source=google-CZ&utm_medium=referral&utm_campaign=hp-footer&fg=1"
+          >O společnosti Google</a
+        >
+        <a
+          class="phioh"
+          href="https://www.google.com/intl/cs_cz/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1"
+          >Reklama</a
+        >
+        <a
+          class="phioh"
+          href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1"
+          >Firma</a
+        >
+        <a class="phioh" href="https://google.com/search/howsearchworks/?fg=1"
+          >Jak funguje Vyhledávání</a
+        >
+        <span class="kxwpgc ktlki">
+          <a
+            class="phioh"
+            href="https://sustainability.google/intl/cs/carbon-free/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer&utm_content="
+            >Třetí desetiletí našich opatření v oblasti ochrany klimatu</a
+          ></span
+        >
+        <a class="phioh r" href="https://policies.google.com/privacy?hl=cs&fg=1"
+          >Ochrana soukromí</a
+        >
+        <a class="phioh r" href="https://policies.google.com/terms?hl=cs&fg=1"
+          >Smluvní podmínky</a
+        >
+        <div class="dropup">
+          <button class="dropbtn">Nastavení</button>
+          <div class="dropup-content">
+            <a href="https://www.google.com/preferences?hl=cs&fg=1"
+              >Nastavení vyhledávání</a
+            >
+            <a href="advanced.html">Rozšířené vyhledávání</a>
+            <a
+              href="https://myactivity.google.com/privacyadvisor/search?utm_source=googlemenu&fg=1"
+              >Vaše data ve vyhledávání</a
+            >
+            <a
+              href="https://myactivity.google.com/product/search?utm_source=google&hl=cs&fg=1"
+              >Historie vyhledávání</a
+            >
+            <a
+              href="https://support.google.com/websearch/?p=ws_results_help&hl=cs&fg=1"
+              >Vyhledávat v nápovědě</a
+            >
+          </div>
         </div>
-        <div class="flex">
-            <label for="exac">přesně toto slovo nebo sousloví</label><br>
-            <input type="text" id="exac" name="exac">
-            <p class="pr">Přesná slova zadejte v uvozovkách: "krysí teriér"</p>
-        </div>
-        <div class="flex">
-            <label for="any">kterékoliv z těchto slov</label><br>
-            <input type="text" id="any" name="any"><br>
-            <p class="pr">Mezi všechna požadovaná slova vložte operátor OR: miniaturní OR standardní</p>
-        </div>
-        <div class="flex">
-            <label for="none">žádné z těchto slov:</label><br>
-            <input type="text" id="none" name="none">
-            <p class="pr">Před slova, která nechcete, zadejte znaménko mínus: -hlodavec, -"Jack Russell"</p>
-        </div>
-        <div class="flex">
-            <label for="numbers">čísla od:</label><br>
-            <input type="text" id="numbers" name="numbers"><br>
-            <label for="numbers">do</label>
-            <input type="text" id="numbers" name="numbers"><br>
-            <p class="pr">Mezi čísla vložte 2 tečky a uveďte měrnou jednotku: 10..35 kg, 300..500 Kč, 2010..2011</p>
-        </div>
-          </form>
-          <hr>
-        </div>
-        <footer>
-            <p class="pl">Česko</p>
-            <hr>
-            <div class="flex">
-            <a class = "phioh pl" href="https://about.google/?utm_source=google-CZ&utm_medium=referral&utm_campaign=hp-footer&fg=1">O společnosti Google</a>
-            <a class = "phioh" href="https://www.google.com/intl/cs_cz/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Reklama</a>
-            <a class = "phioh" href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Firma</a>
-            <a class = "phioh" href="https://google.com/search/howsearchworks/?fg=1">Jak funguje Vyhledávání</a>
-           <span class="kxwpgc ktlki"> <a class="phioh" href="https://sustainability.google/intl/cs/carbon-free/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer&utm_content=">Třetí desetiletí našich opatření v oblasti ochrany klimatu</a></span>
-            <a class="phioh r" href="https://policies.google.com/privacy?hl=cs&fg=1">Ochrana soukromí</a>
-            <a class="phioh r" href="https://policies.google.com/terms?hl=cs&fg=1">Smluvní podmínky</a>
-            <div class="dropup">
-                <button class="dropbtn">Nastavení</button>
-                <div class="dropup-content">
-                  <a href="https://www.google.com/preferences?hl=cs&fg=1">Nastavení vyhledávání</a>
-                  <a href="advanced.html">Rozšíření vyhledávání</a>
-                  <a href="https://myactivity.google.com/privacyadvisor/search?utm_source=googlemenu&fg=1">Vaše data ve vyhledávání</a>
-                  <a href="https://myactivity.google.com/product/search?utm_source=google&hl=cs&fg=1">Historie vyhledávání</a>
-                  <a href="https://support.google.com/websearch/?p=ws_results_help&hl=cs&fg=1">Vyhledávat v nápovědě</a>
-                </div>
-              </div>
-            </div>
-            </div>
-        </footer>
-    </body>
+      </div>
+    </footer>
+  </body>
+</html>

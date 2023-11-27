@@ -118,8 +118,16 @@ img {
     text-decoration: none;
     flex-wrap: nowrap;
     display: flex;
-    
 }
+
+.gb_F:hover {
+    text-decoration: underline;
+}
+
+.phioh:hover{
+    text-decoration: underline;
+}
+
 
 .flex{
     display: flex;
@@ -218,16 +226,12 @@ margin-top: 3rem;
     border: 1px solid rgb(145, 145, 145);
 }
 
-.phioh a:hover {
-    text-decoration: underline;
-}
-
 /* Dropup Button */
 .dropbtn {
     background-color: #171717;
     color: white;
-    padding: 16px;
-    font-size: 16px;
+    padding: 15px;
+    font-size: 15px;
     border: none;
   }
   
@@ -267,4 +271,28 @@ margin-top: 3rem;
   /* Change the background color of the dropup button when the dropup content is shown */
   .dropup:hover .dropbtn {
     text-decoration: underline;
+  }
+
+  hr{ border:1px solid gray;
+  }
+
+.h {border: 1px solid white;
+    min-height: 5px;
+    width: 30%;
+display: flex;
+justify-content: center;}
+
+  .advanced{
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  select{
+    width:50%;
+    background-color: #202124;
+    color:white;
+    display:flex;
+    justify-content: center;
   }
